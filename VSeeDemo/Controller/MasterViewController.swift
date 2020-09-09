@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreData
 import TVNExtensions
 import RealmSwift
 import Hero
