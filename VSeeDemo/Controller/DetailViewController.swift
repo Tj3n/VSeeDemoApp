@@ -20,13 +20,17 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var imgViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var authorLabel: UILabel!
     
-    var article: ArticleRealm!
+    var article: ArticleRealm = ArticleRealm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.title = "Article"
+        bind()
+    }
+    
+    func bind() {
         if let imgURL = article.urlToImageParsed {
             imageView.kf.setImage(with: imgURL, placeholder: #imageLiteral(resourceName: "defaultBanner")) { (result) in
                 switch result {

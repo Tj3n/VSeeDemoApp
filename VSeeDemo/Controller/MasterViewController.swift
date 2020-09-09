@@ -31,6 +31,15 @@ class MasterViewController: UIViewController {
                                                                                       spacingFromLastCell: 10,
                                                                                       spacingFromLastCellWhenLoadMoreActionStart: 60)
     
+    lazy var detailSplitVC: DetailViewController? = {
+       if let splitVC = self.splitViewController,
+        let detailNavVC = splitVC.viewControllers.last as? UINavigationController,
+        let detailVC = detailNavVC.topViewController as? DetailViewController {
+            return detailVC
+        }
+        return nil
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -38,6 +47,10 @@ class MasterViewController: UIViewController {
         
         tableView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+        
+        if let detailVC = detailSplitVC, let article = viewModel.articles.first {
+            detailVC.article = article //Supply first data in iPad mode
+        }
     }
     
     @objc func refresh(_ sender: UIRefreshControl) {
@@ -74,13 +87,19 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let detailVC = DetailViewController.instantiate()
-        detailVC.article = viewModel.articles[indexPath.row]
-        
-        self.navigationController?.isHeroEnabled = true
-        self.navigationController?.heroNavigationAnimationType = .autoReverse(presenting: .slide(direction: .left))
-        
-        self.navigationController?.pushViewController(detailVC, animated: true)
+        if let detailVC = detailSplitVC {
+            //iPad split view
+            detailVC.article = viewModel.articles[indexPath.row]
+            detailVC.bind()
+        } else {
+            let detailVC = DetailViewController.instantiate()
+            detailVC.article = viewModel.articles[indexPath.row]
+            
+            self.navigationController?.isHeroEnabled = true
+            self.navigationController?.heroNavigationAnimationType = .autoReverse(presenting: .slide(direction: .left))
+            
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
     }
 }
 
