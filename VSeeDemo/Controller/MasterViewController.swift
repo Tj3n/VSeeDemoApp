@@ -103,12 +103,6 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-extension MasterViewController: UITableViewDataSourcePrefetching {
-    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-        
-    }
-}
-
 extension MasterViewController: MasterViewModelDelegate {
     func dbDidChange(changes: RealmCollectionChange<Results<ArticleRealm>>) {
         switch changes {
