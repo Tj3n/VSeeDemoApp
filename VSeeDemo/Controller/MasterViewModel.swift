@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 import RealmSwift
 
-protocol MasterViewModelDelegate {
+protocol MasterViewModelDelegate: class {
     func dbDidChange(changes: RealmCollectionChange<Results<ArticleRealm>>)
     func onError(_ error: Error)
 }
 
 class MasterViewModel {
-    private var delegate: MasterViewModelDelegate?
+    private weak var delegate: MasterViewModelDelegate?
     private var newsClient: NewsClient
     
     private var realm = try! Realm()
