@@ -1,0 +1,64 @@
+PODS:
+  - Alamofire (5.2.2)
+  - Hero (1.5.0)
+  - Kingfisher (5.14.1):
+    - Kingfisher/Core (= 5.14.1)
+  - Kingfisher/Core (5.14.1)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Realm (5.3.6):
+    - Realm/Headers (= 5.3.6)
+  - Realm/Headers (5.3.6)
+  - RealmSwift (5.3.6):
+    - Realm (= 5.3.6)
+  - TVNExtensions (0.0.1):
+    - TVNExtensions/Lite (= 0.0.1)
+  - TVNExtensions/Foundation (0.0.1)
+  - TVNExtensions/Helper (0.0.1):
+    - TVNExtensions/UIKit
+  - TVNExtensions/Lite (0.0.1):
+    - TVNExtensions/Foundation
+    - TVNExtensions/Helper
+    - TVNExtensions/UIKit
+  - TVNExtensions/UIKit (0.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Hero
+  - Kingfisher
+  - Moya (~> 14.0)
+  - RealmSwift
+  - TVNExtensions (from `https://github.com/Tj3n/TVNExtensions`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Hero
+    - Kingfisher
+    - Moya
+    - Realm
+    - RealmSwift
+
+EXTERNAL SOURCES:
+  TVNExtensions:
+    :git: https://github.com/Tj3n/TVNExtensions
+
+CHECKOUT OPTIONS:
+  TVNExtensions:
+    :commit: 7b60b628851274bb023dbca3b576f2947fedeb2c
+    :git: https://github.com/Tj3n/TVNExtensions
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
+  Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Realm: cd400dd7e5b5bb5c8ae9842eecd73792369e6ec0
+  RealmSwift: 99a16dbdee5d6dfb3d91d56088a9f8c15c0871d1
+  TVNExtensions: 3144d5ec4527b5e9f66aec4ea89a23571221a8a3
+
+PODFILE CHECKSUM: 8dd1fcdeacd263bad559867768ee0fdc2e76cfce
+
+COCOAPODS: 1.8.4

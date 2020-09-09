@@ -1,0 +1,92 @@
+{
+  "name": "TVNExtensions",
+  "version": "0.0.1",
+  "summary": "Swift extensions",
+  "description": "Swift extensions for iOS",
+  "homepage": "https://github.com/Tj3n",
+  "license": "MIT",
+  "authors": {
+    "tien.vu": "tienvn3845@gmail.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/Tj3n/TVNExtensions.git",
+    "branch": "master"
+  },
+  "requires_arc": true,
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "AVFoundation"
+  ],
+  "default_subspecs": "Lite",
+  "subspecs": [
+    {
+      "name": "Foundation",
+      "source_files": "Foundation"
+    },
+    {
+      "name": "UIKit",
+      "source_files": "UIKit"
+    },
+    {
+      "name": "Helper",
+      "source_files": "Helper",
+      "dependencies": {
+        "TVNExtensions/UIKit": [
+
+        ]
+      },
+      "frameworks": [
+        "CoreTelephony",
+        "CoreLocation",
+        "LocalAuthentication"
+      ]
+    },
+    {
+      "name": "Lite",
+      "dependencies": {
+        "TVNExtensions/Helper": [
+
+        ],
+        "TVNExtensions/UIKit": [
+
+        ],
+        "TVNExtensions/Foundation": [
+
+        ]
+      }
+    },
+    {
+      "name": "Rx",
+      "source_files": "Rx",
+      "dependencies": {
+        "TVNExtensions/Helper": [
+
+        ],
+        "TVNExtensions/UIKit": [
+
+        ],
+        "TVNExtensions/Foundation": [
+
+        ],
+        "RxSwift": [
+
+        ],
+        "RxCocoa": [
+
+        ]
+      }
+    },
+    {
+      "name": "Kingfisher",
+      "dependencies": {
+        "Kingfisher": [
+
+        ]
+      }
+    }
+  ]
+}
