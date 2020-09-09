@@ -179,9 +179,9 @@
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="9e8-kA-gUJ"/>
-                                    <constraint firstAttribute="width" constant="44" id="SHI-0J-ZBk"/>
+                                    <constraint firstAttribute="width" secondItem="2Dr-Zt-czS" secondAttribute="height" multiplier="1:1" id="bIF-sd-kDm"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
