@@ -39,7 +39,9 @@ class DetailViewController: UIViewController {
                     let ratio = imgResult.image.size.width / imgResult.image.size.height
                     let newHeight = self.imageView.frame.width / ratio
                     self.imgViewHeightConstraint.constant = newHeight
-                    self.view.layoutIfNeeded()
+                    UIView.animate(withDuration: 0.3) {
+                        self.view.layoutIfNeeded()
+                    }
                     
                 case .failure(_):
                     break
