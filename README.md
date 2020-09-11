@@ -8,3 +8,4 @@
 - Hero: Transistion animation.
 - Realm + RealmSwift: Local database.
 - TVNExtension: Own collection of tweaks and helper code.
+- Bitrise: CI service.
