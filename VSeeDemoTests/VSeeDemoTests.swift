@@ -14,7 +14,6 @@ import RealmSwift
 class VSeeDemoTests: XCTestCase {
     
     var provider = MoyaProvider<NewsTarget>(stubClosure: MoyaProvider.immediatelyStub)
-    lazy var viewModel: MasterViewModel = MasterViewModel(delegate: self, newsClient: NewsClient(provider: provider, latestDate: Date()))
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -31,24 +30,50 @@ class VSeeDemoTests: XCTestCase {
         
         let expectation = self.expectation(description: "Success")
         
-        let provider = MoyaProvider<NewsTarget>(stubClosure: MoyaProvider.immediatelyStub)
+        provider = MoyaProvider<NewsTarget>(stubClosure: MoyaProvider.immediatelyStub)
         provider.request(.fetchTopHeadlines) { (result) in
             switch result {
-            case .success(_):
-                expectation.fulfill()
+            case .success(let response):
+                do {
+                    let decoder = JSONDecoder()
+                    decoder.dateDecodingStrategy = .iso8601
+                    
+                    let filteredResponse = try response.filterSuccessfulStatusCodes()
+                    let data = filteredResponse.data
+                    
+                    let _ = try decoder.decode(NewsModel.self, from: data)
+                    expectation.fulfill()
+                } catch {
+                    print(error)
+                    XCTFail(error.localizedDescription)
+                }
             case .failure(_):
                 XCTFail("Error parsing")
             }
         }
-        self.waitForExpectations(timeout: 5.0, handler: nil)
+        wait(for: [expectation], timeout: 5.0)
+    }
+    
+    func testNewsClient() {
+        let client = NewsClient(provider: provider)
+        let expectation = self.expectation(description: "Success")
+        
+        client.fetchNews(onSuccess: { (results) in
+            expectation.fulfill()
+        }) { (_) in
+            XCTFail("Error")
+        }
+        wait(for: [expectation], timeout: 5.0)
     }
     
     private var updateExpectation: XCTestExpectation!
     //Check if update is called
     func testViewModel() {
+        provider = MoyaProvider<NewsTarget>(stubClosure: MoyaProvider.immediatelyStub)
+        let viewModel = MasterViewModel(delegate: self, newsClient: NewsClient(provider: provider, latestDate: Date()))
         updateExpectation = self.expectation(description: "updateExpectation")
         viewModel.load()
-        self.waitForExpectations(timeout: 5.0, handler: nil)
+        wait(for: [updateExpectation], timeout: 5.0)
     }
     
     private var updateFailedExpectation: XCTestExpectation!
@@ -61,12 +86,12 @@ class VSeeDemoTests: XCTestCase {
                           task: target.task,
                           httpHeaderFields: target.headers)
         }
-        let serverErrorProvider = MoyaProvider<NewsTarget>(endpointClosure: serverErrorEndpointClosure, stubClosure: MoyaProvider.immediatelyStub)
-        provider = serverErrorProvider
+        provider = MoyaProvider<NewsTarget>(endpointClosure: serverErrorEndpointClosure, stubClosure: MoyaProvider.immediatelyStub)
+        let viewModel = MasterViewModel(delegate: self, newsClient: NewsClient(provider: provider, latestDate: Date()))
         updateExpectation = self.expectation(description: "updateExpectation")
         updateFailedExpectation = expectation(description: "updateFailedExpectation")
         viewModel.load()
-        self.waitForExpectations(timeout: 5.0, handler: nil)
+        wait(for: [updateExpectation, updateFailedExpectation], timeout: 5.0)
     }
     
     func testPerformanceExample() throws {

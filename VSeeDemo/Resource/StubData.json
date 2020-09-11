@@ -1,136 +1,71 @@
 {
     "status": "ok",
-    "totalResults": 10,
+    "totalResults": 5,
     "articles": [
         {
             "source": {
-                "id": "bbc-sport",
-                "name": "BBC Sport"
+                "id": "bbc-news",
+                "name": "BBC News"
             },
-            "author": "BBC Sport",
-            "title": "Celtics push Raptors to brink of exit",
-            "description": "Defending champions the Toronto Raptors are one game from elimination after defeat by the Boston Celtics in the NBA play-offs.",
-            "url": "http://www.bbc.co.uk/sport/basketball/54068431",
-            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/78B1/production/_114279803_celtics.jpg",
-            "publishedAt": "2020-09-08T07:07:44.5689166Z",
-            "content": "Kyle Lowry (right) said the Raptors were not \"assertive\" enough in game five\r\nThe Boston Celtics beat the Toronto Raptors to take a 3-2 series lead in their Eastern Conference semi-final and leave th… [+1060 chars]"
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Coronavirus: Government apologises over tests shortage",
+            "description": "A director of the government's test and trace scheme in England says lab capacity is the issue.",
+            "url": "https://www.bbc.co.uk/news/health-54072479",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/F454/production/_114284526_gettyimages-1213688615.jpg",
+            "publishedAt": "2020-09-08T12:47:03Z",
+            "content": "Image copyrightGetty Images\r\nA director of the government's test and trace programme in England has issued a \"heartfelt\" apology for problems with the coronavirus testing system.\r\nIn a tweet, Sarah-J… [+3949 chars]"
         },
         {
             "source": {
-                "id": "bbc-sport",
-                "name": "BBC Sport"
+                "id": "bbc-news",
+                "name": "BBC News"
             },
-            "author": "BBC News",
-            "title": "Tennis Number One Ash Barty pulls out of French Open over coronavirus",
-            "description": "The Australian cites health risks and lack of preparation as the reasons she won't be defending her Grand Slam title.",
-            "url": "http://www.bbc.co.uk/news/world-australia-54068037",
-            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/EAC1/production/_114279006_mediaitem114279005.jpg",
-            "publishedAt": "2020-09-08T07:07:42.7100035Z",
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Son's birthday whisky collection sells for £44,000",
+            "description": "Matthew Robson's collection of 28 whisky bottles was valued at £40,000.",
+            "url": "https://www.bbc.co.uk/news/uk-england-somerset-54071451",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/0DB2/production/_114260530_mediaitem114260529.jpg",
+            "publishedAt": "2020-09-08T12:46:08Z",
             "content": null
         },
         {
             "source": {
-                "id": "bbc-sport",
-                "name": "BBC Sport"
+                "id": "bbc-news",
+                "name": "BBC News"
             },
-            "author": "BBC Sport",
-            "title": "F1's Hamilton to launch Extreme E team",
-            "description": "Six-time Formula 1 world champion Lewis Hamilton will enter a team in the new Extreme E racing series.",
-            "url": "http://www.bbc.co.uk/sport/formula1/53630904",
-            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/B3F3/production/_113876064_lewishamilton.jpg",
-            "publishedAt": "2020-09-08T07:07:41.3509666Z",
-            "content": "Hamilton is bidding for a record-equalling F1 world title this year\r\nSix-time Formula 1 world champion Lewis Hamilton will enter a team in the new Extreme E racing series.\r\nBriton Hamilton, 35, said … [+4341 chars]"
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Former PM Theresa May issues warning over 'trust' on Brexit deal",
+            "description": "Theresa May says the government could damage its standing if it brings in a new law.",
+            "url": "https://www.bbc.co.uk/news/uk-politics-54073836",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/11DC6/production/_114285137_may.jpg",
+            "publishedAt": "2020-09-08T12:30:55Z",
+            "content": "Image copyrightUK ParliamentImage caption\r\n Former Prime Minister Theresa May\r\nFormer Prime Minister Theresa May has questioned how the UK can be \"trusted\" if the government moves to amend its Brexit… [+1522 chars]"
         },
         {
             "source": {
-                "id": "bbc-sport",
-                "name": "BBC Sport"
+                "id": "bbc-news",
+                "name": "BBC News"
             },
-            "author": "BBC Sport",
-            "title": "Australia's vegan, whisky-loving coffee connoisseur",
-            "description": "Why leg-spinner Adam Zampa's eclectic interests mean he only has room for \"three T-shirts and two pairs of pants\" in his suitcase.",
-            "url": "http://www.bbc.co.uk/sport/cricket/54056253",
-            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/16B1D/production/_114275929_adam_zampa_getty5.jpg",
-            "publishedAt": "2020-09-08T07:07:33.0873976Z",
-            "content": "Zampa has taken 34 wickets at an average of 21.08 and economy rate of 6.49 in 32 Twenty20 internationals\r\nTwo years ago, a young Australia side on their first tour after the bruising ball-tampering f… [+5453 chars]"
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Sushant Singh Rajput: Bollywood actor Rhea Chakraborty arrested",
+            "description": "She has been arrested in a drugs case related to the death of her actor-boyfriend Sushant Singh Rajput.",
+            "url": "https://www.bbc.co.uk/news/world-asia-india-54070232",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/8FB2/production/_114268763_gettyimages-1228366799.jpg",
+            "publishedAt": "2020-09-08T12:29:58Z",
+            "content": null
         },
         {
             "source": {
-                "id": "bbc-sport",
-                "name": "BBC Sport"
+                "id": "bbc-news",
+                "name": "BBC News"
             },
-            "author": "BBC Sport",
-            "title": "Is England's new man Grealish misunderstood?",
-            "description": "As Jack Grealish is involved with England for the first time, BBC Sport speaks to those who know him well to find out what he is really like.",
-            "url": "https://www.bbc.co.uk/sport/football/53986569",
-            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/F027/production/_114197416_grealish.jpg",
-            "publishedAt": "2020-09-08T07:07:25.105009Z",
-            "content": "Jack Grealish's goal against West Ham on the final day of last season helped Aston Villa retain their Premier League status\r\n\"You see a lot of stuff written about him now and it upsets me,\" sighs Ala… [+12430 chars]"
-        },
-        {
-            "source": {
-                "id": "bbc-sport",
-                "name": "BBC Sport"
-            },
-            "author": "BBC Sport",
-            "title": "Johnson wins Tour Championship",
-            "description": "World number one Dustin Johnson claims victory at the PGA Tour's season-ending Tour Championship.",
-            "url": "http://www.bbc.co.uk/sport/golf/54066490",
-            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/CF5F/production/_114278035_gettyimages-1271217809.jpg",
-            "publishedAt": "2020-09-07T22:37:22.115309Z",
-            "content": "Dustin Johnson began the week on 10 under as the Tour Championship's top-ranked player\r\n<table><tr><th>Tour Championship final-round leaderboard (US unless stated)</th></tr>\r\n<tr><td>-21 D Johnson; -… [+1171 chars]"
-        },
-        {
-            "source": {
-                "id": "bbc-sport",
-                "name": "BBC Sport"
-            },
-            "author": "BBC Sport",
-            "title": "Rodriguez joins Everton from Real",
-            "description": "Everton sign Colombia attacking midfielder James Rodriguez from Real Madrid in a deal worth £20m.",
-            "url": "http://www.bbc.co.uk/sport/football/53992937",
-            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/13590/production/_97584297_breaking_news.png",
-            "publishedAt": "2020-09-07T19:07:30.1091768Z",
-            "content": "Everton have signed Colombia attacking midfielder James Rodriguez from Real Madrid in a deal worth £20m.\r\nThe 29-year-old joins the Toffees on a two-year contract, with the option for a further seaso… [+1430 chars]"
-        },
-        {
-            "source": {
-                "id": "bbc-sport",
-                "name": "BBC Sport"
-            },
-            "author": "BBC Sport",
-            "title": "Williams through to US Open last eight",
-            "description": "Serena Williams battles through a challenging three-set test against Greek 15th seed Maria Sakkari to reach the US Open quarter-finals.",
-            "url": "http://www.bbc.co.uk/sport/tennis/54064359",
-            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/13590/production/_97584297_breaking_news.png",
-            "publishedAt": "2020-09-07T18:52:23.9869941Z",
-            "content": "<table><tr><th>2020 US Open</th></tr>\r\n<tr><td>Venue: Flushing Meadows, New York Dates: 31 Aug-13 Sept</td></tr><tr><td>Coverage: Selected live radio and text commentaries on BBC Radio 5 Live Sports … [+648 chars]"
-        },
-        {
-            "source": {
-                "id": "bbc-sport",
-                "name": "BBC Sport"
-            },
-            "author": "BBC Sport",
-            "title": "Messi returns to Barcelona training",
-            "description": "Lionel Messi has returned to training at Barcelona following his failed attempt to force a move away from the club.",
-            "url": "http://www.bbc.co.uk/sport/football/54061309",
-            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/114B/production/_114272440_gettyimages-1271143737.jpg",
-            "publishedAt": "2020-09-07T15:22:26.3194224Z",
-            "content": "Manchester City were among the clubs linked with Lionel Messi, whose Barcelona contract expires next summer\r\nBarcelona's all-time top scorer Lionel Messi has returned to training following his failed… [+1234 chars]"
-        },
-        {
-            "source": {
-                "id": "bbc-sport",
-                "name": "BBC Sport"
-            },
-            "author": "BBC Sport",
-            "title": "FA investigates Foden & Greenwood claims",
-            "description": "Allegations England's Phil Foden and Mason Greenwood broke quarantine rules in Iceland are being investigated by the FA.",
-            "url": "http://www.bbc.co.uk/sport/football/54059328",
-            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/13590/production/_97584297_breaking_news.png",
-            "publishedAt": "2020-09-07T12:22:25.4775992Z",
-            "content": "The Football Association is investigating allegations England midfielder Phil Foden and forward Mason Greenwood broke quarantine rules after Saturday's win in Iceland.\r\nThe expectation is that Manche… [+190 chars]"
+            "author": null,
+            "title": "Premiership: London Irish v Harlequins",
+            "description": "Team news as London Irish face Harlequins in Wednesday's Premiership fixture at Twickenham Stoop (19:45 BST).",
+            "url": "https://www.bbc.co.uk/sport/rugby-union/54056587",
+            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/17028/production/_114284249_chrisrobshaw2.jpg",
+            "publishedAt": "2020-09-08T12:11:24Z",
+            "content": "Former England skipper Chris Robshaw captains Harlequins, who have won just one of their past four Premiership games\r\n<table><tr><th>Gallagher Premiership</th></tr>\r\n<tr><td>Venue: Twickenham Stoop D… [+1245 chars]"
         }
     ]
 }

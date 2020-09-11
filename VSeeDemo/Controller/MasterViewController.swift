@@ -72,6 +72,7 @@ extension MasterViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        // Load more upon the end of list
         loadMoreIndicator.start {
             DispatchQueue.global(qos: .utility).async {
                 self.viewModel.loadMore {
